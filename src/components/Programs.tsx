@@ -5,7 +5,8 @@ import {
   Music, 
   Drama, 
   Video, 
-  BookOpen
+  BookOpen,
+  Footprints
 } from 'lucide-react';
 import { Link } from "react-router-dom";
 
@@ -38,7 +39,7 @@ const programData = [
     id: 'dance',
     title: 'Dance',
     description: 'Experience a variety of dance styles from ballet to hip-hop and cultural dances.',
-    icon: Drama,
+    icon: Footprints,
     className: 'program-card-dance',
     path: '/services/dance'
   },

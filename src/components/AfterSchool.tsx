@@ -41,16 +41,15 @@ const AfterSchool = () => {
       <div className="container px-4">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="lg:w-1/2">
-            <div className="relative">
-              <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1576087071781-abc42c112f3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                  alt="Children in after school club creating art together" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute top-0 left-0 w-full h-full -rotate-3 bg-rainbow-blue rounded-2xl -z-10"></div>
-              <div className="absolute top-0 left-0 w-full h-full rotate-3 bg-rainbow-purple rounded-2xl -z-20"></div>
+            <div className="p-8 bg-muted rounded-2xl relative">
+              <div className="absolute -top-6 -right-6 w-32 h-32 bg-rainbow-yellow/30 rounded-full"></div>
+              <div className="absolute bottom-8 left-4 w-16 h-16 bg-rainbow-blue/30 rounded-full"></div>
+              <h3 className="text-2xl font-bold mb-4 relative z-10">Creative After-School Environment</h3>
+              <p className="relative z-10">
+                Our vibrant after-school clubs provide a creative sanctuary where children continue their artistic journey beyond the classroom. 
+                Each session integrates our core arts programs, fostering imagination in a safe, supportive space.
+              </p>
+              <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-rainbow-purple/20 rounded-full"></div>
             </div>
           </div>
           

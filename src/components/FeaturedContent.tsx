@@ -16,11 +16,13 @@ const FeaturedContent = () => {
       title: "How Drama Builds Confidence in Shy Children",
       excerpt: "From reluctance to resilience: see how dramatic play helps children overcome social anxiety.",
       image: "https://images.unsplash.com/photo-1560421683-6856ea585c78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      id: "drama-builds-confidence"
     },
     {
       title: "Understanding PDA: Creative Approaches",
       excerpt: "Learn how arts-based methods can reduce pressure for children with PDA profiles.",
       image: "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      id: "understanding-pda"
     }
   ];
 
@@ -76,7 +78,11 @@ const FeaturedContent = () => {
                 <div className="p-4 flex-1">
                   <h4 className="font-bold mb-1 text-sm">{post.title}</h4>
                   <p className="text-sm text-gray-600 mb-2 line-clamp-2">{post.excerpt}</p>
-                  <Link to="/blog" className="text-xs text-primary font-medium flex items-center">
+                  <Link 
+                    to={`/blog`} 
+                    state={{ postId: post.id }}
+                    className="text-xs text-primary font-medium flex items-center"
+                  >
                     Read more <ArrowRight size={12} className="ml-1" />
                   </Link>
                 </div>
