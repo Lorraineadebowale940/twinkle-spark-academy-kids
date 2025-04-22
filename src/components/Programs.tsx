@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   Palette, 
@@ -8,6 +7,7 @@ import {
   MicIcon as Mic, 
   BookText
 } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const programData = [
   {
@@ -15,42 +15,48 @@ const programData = [
     title: 'Art',
     description: 'Explore painting, drawing, sculpture, and more in our creative art classes.',
     icon: Palette,
-    className: 'program-card-art'
+    className: 'program-card-art',
+    path: '/services/art'
   },
   {
     id: 'music',
     title: 'Music',
     description: 'Learn instruments, singing, and music theory in a fun, supportive environment.',
     icon: Music,
-    className: 'program-card-music'
+    className: 'program-card-music',
+    path: '/services/music'
   },
   {
     id: 'drama',
     title: 'Drama',
     description: 'Develop confidence through acting, stage craft, and storytelling.',
     icon: Drama,
-    className: 'program-card-drama'
+    className: 'program-card-drama',
+    path: '/services/drama'
   },
   {
     id: 'dance',
     title: 'Dance',
     description: 'Experience a variety of dance styles from ballet to hip-hop and cultural dances.',
     icon: Drama,
-    className: 'program-card-dance'
+    className: 'program-card-dance',
+    path: '/services/dance'
   },
   {
     id: 'film',
     title: 'Film',
     description: 'Create movies, animation, and learn about storytelling through visual media.',
     icon: Video,
-    className: 'program-card-film'
+    className: 'program-card-film',
+    path: '/services/film'
   },
   {
     id: 'nlp',
     title: 'NLP for Kids',
     description: 'Develop communication skills, emotional intelligence, and positive mindsets.',
     icon: BookText,
-    className: 'program-card-nlp'
+    className: 'program-card-nlp',
+    path: '/services/nlp'
   }
 ];
 
@@ -73,9 +79,13 @@ const Programs = () => {
               </div>
               <h3 className="text-2xl font-bold mb-2">{program.title}</h3>
               <p className="mb-4">{program.description}</p>
-              <a href={`#${program.id}`} className="inline-flex items-center font-bold underline underline-offset-2">
+              
+              <Link
+                to={program.path}
+                className="inline-flex items-center font-bold underline underline-offset-2 story-link hover-scale"
+              >
                 Learn more
-              </a>
+              </Link>
               
               {/* Decorative elements */}
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-white/10 rounded-full"></div>
