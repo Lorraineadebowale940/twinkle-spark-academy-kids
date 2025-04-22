@@ -106,19 +106,31 @@ export default {
 				'spin-slow': {
 					'0%': { transform: 'rotate(0deg)' },
 					'100%': { transform: 'rotate(360deg)' }
-				}
+				},
+                'shooting-star': {
+                  '0%': { transform: 'translateX(-100px) translateY(-100px)', opacity: '0' },
+                  '10%': { opacity: '1' },
+                  '70%': { opacity: '1' },
+                  '100%': { transform: 'translateX(300px) translateY(300px)', opacity: '0' }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 3s ease-in-out infinite',
 				'bounce-soft': 'bounce-soft 2s ease-in-out infinite',
-				'spin-slow': 'spin-slow 15s linear infinite'
+				'spin-slow': 'spin-slow 15s linear infinite',
+                'shooting-star': 'shooting-star 5s ease-in-out infinite'
 			},
 			fontFamily: {
 				'rounded': ['Nunito', 'sans-serif'],
 				'display': ['Baloo 2', 'cursive']
-			}
+			},
+            spacing: {
+              '22': '5.5rem',
+              '34': '8.5rem',
+              '40': '10rem'
+            }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

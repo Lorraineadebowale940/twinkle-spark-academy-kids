@@ -6,6 +6,7 @@ import Programs from '../components/Programs';
 import AfterSchool from '../components/AfterSchool';
 import BigBangDays from '../components/BigBangDays';
 import SpecialNeeds from '../components/SpecialNeeds';
+import FeaturedContent from '../components/FeaturedContent';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
@@ -19,6 +20,7 @@ const Index = () => {
         <AfterSchool />
         <BigBangDays />
         <SpecialNeeds />
+        <FeaturedContent />
         <Contact />
       </main>
       <Footer />

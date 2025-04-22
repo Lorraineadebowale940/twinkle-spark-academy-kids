@@ -26,24 +26,31 @@ const Hero = () => {
               Special needs specialists available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Button className="text-lg py-6 px-8 bg-primary hover:bg-primary/90">
-                Explore Programs
+              <Button className="text-lg py-6 px-8 bg-primary hover:bg-primary/90" asChild>
+                <a href="#programs">Explore Programs</a>
               </Button>
-              <Button variant="outline" className="text-lg py-6 px-8 border-2">
-                Special Needs Support
+              <Button variant="outline" className="text-lg py-6 px-8 border-2" asChild>
+                <a href="#special-needs">Special Needs Support</a>
               </Button>
             </div>
           </div>
           <div className="md:w-1/2 relative">
+            {/* Rainbow and Shooting Star Animation */}
             <div className="relative w-full aspect-square max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-rainbow-purple to-rainbow-blue opacity-80 rounded-full animate-spin-slow"></div>
-              <div className="absolute inset-2 bg-white rounded-full flex items-center justify-center overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1560541919-eb5c2da6a5a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                  alt="Children creating art together" 
-                  className="w-full h-full object-cover mix-blend-overlay opacity-90"
-                />
-                <div className="absolute inset-0 bg-gradient-to-tr from-rainbow-blue/30 to-rainbow-purple/30"></div>
+              {/* Rainbow Background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-rainbow-red via-rainbow-yellow via-rainbow-green via-rainbow-blue to-rainbow-purple opacity-80 rounded-full animate-pulse"></div>
+              
+              {/* Rainbow Arc Layers */}
+              <div className="absolute inset-10 border-8 border-rainbow-red rounded-full"></div>
+              <div className="absolute inset-16 border-8 border-rainbow-orange rounded-full"></div>
+              <div className="absolute inset-22 border-8 border-rainbow-yellow rounded-full"></div>
+              <div className="absolute inset-28 border-8 border-rainbow-green rounded-full"></div>
+              <div className="absolute inset-34 border-8 border-rainbow-blue rounded-full"></div>
+              <div className="absolute inset-40 border-8 border-rainbow-purple rounded-full"></div>
+              
+              {/* Shooting Star */}
+              <div className="absolute w-12 h-12 bg-white rounded-full shadow-lg filter blur-sm top-0 left-1/4 animate-shooting-star">
+                <div className="w-16 h-1 bg-gradient-to-r from-white via-yellow-300 to-transparent absolute -bottom-1 -right-16 rotate-45"></div>
               </div>
             </div>
             

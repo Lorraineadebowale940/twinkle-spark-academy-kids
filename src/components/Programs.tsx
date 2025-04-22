@@ -1,11 +1,11 @@
+
 import React from 'react';
 import { 
   Palette, 
   Music, 
   Drama, 
   Video, 
-  MicIcon as Mic, 
-  BookText
+  BookOpen
 } from 'lucide-react';
 import { Link } from "react-router-dom";
 
@@ -54,7 +54,7 @@ const programData = [
     id: 'nlp',
     title: 'NLP for Kids',
     description: 'Develop communication skills, emotional intelligence, and positive mindsets.',
-    icon: BookText,
+    icon: BookOpen,
     className: 'program-card-nlp',
     path: '/services/nlp'
   }
@@ -73,16 +73,16 @@ const Programs = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {programData.map((program) => (
-            <div key={program.id} className={`program-card text-white ${program.className}`}>
+            <div key={program.id} className={`program-card ${program.className}`}>
               <div className="mb-4 text-white">
                 <program.icon size={48} />
               </div>
-              <h3 className="text-2xl font-bold mb-2">{program.title}</h3>
-              <p className="mb-4">{program.description}</p>
+              <h3 className="text-2xl font-bold mb-2 text-white">{program.title}</h3>
+              <p className="mb-4 text-white">{program.description}</p>
               
               <Link
                 to={program.path}
-                className="inline-flex items-center font-bold underline underline-offset-2 story-link hover-scale"
+                className="inline-flex items-center font-bold underline underline-offset-2 text-white hover-scale"
               >
                 Learn more
               </Link>
