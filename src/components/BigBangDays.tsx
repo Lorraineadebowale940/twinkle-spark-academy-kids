@@ -1,101 +1,140 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Calendar } from 'lucide-react';
+import { CalendarDays, Clock, MapPin, Activity, Brush, Music, Drama } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 const BigBangDays = () => {
-  const upcomingEvents = [
-    {
-      id: 1,
-      title: "Dinosaur Discovery Day",
-      date: "May 15, 2025",
-      description: "Explore the prehistoric world through art, science, and play!"
-    },
-    {
-      id: 2,
-      title: "Space Explorers",
-      date: "June 20, 2025",
-      description: "Blast off into a day of cosmic creativity and stellar science!"
-    },
-    {
-      id: 3,
-      title: "Ocean Adventure",
-      date: "July 8, 2025",
-      description: "Dive into marine art and underwater wonders!"
-    }
-  ];
-
   return (
-    <section id="big-bang" className="py-20 bg-gradient-to-b from-muted to-background">
+    <section id="big-bang" className="py-20 bg-muted">
       <div className="container px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Big Bang Days</h2>
           <p className="text-lg max-w-2xl mx-auto">
-            Special themed days filled with explosive creativity, exciting workshops, and memorable experiences!
+            Explosive one-day creative workshops that transform the school environment into a hub of artistic exploration and discovery.
           </p>
         </div>
         
-        <div className="relative mb-16">
-          <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-1 bg-rainbow-yellow rounded-full hidden md:block"></div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="md:pr-12 md:text-right">
-              <div className="bg-white rounded-xl p-6 shadow-md relative">
-                <div className="md:absolute md:top-1/2 md:-right-16 md:-translate-y-1/2 bg-rainbow-red text-white rounded-full w-12 h-12 flex items-center justify-center mb-4 md:mb-0">
-                  <span className="font-bold">1</span>
-                </div>
-                <h3 className="text-xl font-bold mb-2">Immersive Themes</h3>
-                <p>Each Big Bang Day features a unique theme that transforms our space into an immersive world of discovery.</p>
-              </div>
-            </div>
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h3 className="text-2xl font-bold mb-6">Immersive Creative Experiences</h3>
+            <p className="mb-6">
+              Our Big Bang Days inject excitement and creative energy into the school calendar. 
+              These immersive one-day events transform the learning environment, breaking routine and inspiring children through hands-on creative exploration.
+            </p>
             
-            <div className="md:pl-12">
-              <div className="bg-white rounded-xl p-6 shadow-md relative mt-8 md:mt-24">
-                <div className="md:absolute md:top-1/2 md:-left-16 md:-translate-y-1/2 bg-rainbow-blue text-white rounded-full w-12 h-12 flex items-center justify-center mb-4 md:mb-0">
-                  <span className="font-bold">2</span>
+            <div className="space-y-4 mb-8">
+              <div className="flex items-start">
+                <div className="bg-primary/10 p-2 rounded-full mr-4 text-primary">
+                  <Activity className="h-5 w-5" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Hands-on Workshops</h3>
-                <p>Children participate in a variety of workshops led by artists, scientists, and other specialists.</p>
+                <div>
+                  <h4 className="font-bold">Interactive & Engaging</h4>
+                  <p>Dynamic activities that capture attention and spark enthusiasm for creative learning.</p>
+                </div>
               </div>
-            </div>
-            
-            <div className="md:pr-12 md:text-right">
-              <div className="bg-white rounded-xl p-6 shadow-md relative mt-8 md:mt-24">
-                <div className="md:absolute md:top-1/2 md:-right-16 md:-translate-y-1/2 bg-rainbow-green text-white rounded-full w-12 h-12 flex items-center justify-center mb-4 md:mb-0">
-                  <span className="font-bold">3</span>
+              
+              <div className="flex items-start">
+                <div className="bg-primary/10 p-2 rounded-full mr-4 text-primary">
+                  <Brush className="h-5 w-5" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Collaborative Projects</h3>
-                <p>Children work together on large-scale creative projects that promote teamwork and shared achievement.</p>
+                <div>
+                  <h4 className="font-bold">Cross-Curricular Connections</h4>
+                  <p>Creative activities that reinforce and enhance standard curriculum topics.</p>
+                </div>
               </div>
-            </div>
-            
-            <div className="md:pl-12">
-              <div className="bg-white rounded-xl p-6 shadow-md relative mt-8 md:mt-24">
-                <div className="md:absolute md:top-1/2 md:-left-16 md:-translate-y-1/2 bg-rainbow-purple text-white rounded-full w-12 h-12 flex items-center justify-center mb-4 md:mb-0">
-                  <span className="font-bold">4</span>
+              
+              <div className="flex items-start">
+                <div className="bg-primary/10 p-2 rounded-full mr-4 text-primary">
+                  <Music className="h-5 w-5" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Take-Home Treasures</h3>
-                <p>Every child leaves with something special they've created during the day as a lasting memory.</p>
+                <div>
+                  <h4 className="font-bold">Multi-Arts Approach</h4>
+                  <p>Combining different creative disciplines for a holistic artistic experience.</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <div className="bg-primary/10 p-2 rounded-full mr-4 text-primary">
+                  <Drama className="h-5 w-5" />
+                </div>
+                <div>
+                  <h4 className="font-bold">Confidence Building</h4>
+                  <p>Safe spaces for self-expression that build self-esteem and creative confidence.</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        
-        <div className="bg-white rounded-xl p-8 shadow-lg">
-          <h3 className="text-2xl font-bold mb-6">Upcoming Big Bang Days</h3>
           
-          <div className="grid md:grid-cols-3 gap-6">
-            {upcomingEvents.map((event) => (
-              <div key={event.id} className="border rounded-lg p-6 hover:shadow-md transition-shadow">
-                <div className="flex items-center gap-2 text-primary mb-3">
-                  <Calendar className="h-5 w-5" />
-                  <span className="font-medium">{event.date}</span>
+          <div>
+            <h3 className="text-2xl font-bold mb-6">Examples of Big Bang Days</h3>
+            
+            <div className="space-y-6">
+              <div className="bg-white rounded-xl shadow p-6 hover:shadow-lg transition-shadow">
+                <h4 className="text-xl font-bold text-rainbow-blue mb-3">Storyworld Explorers</h4>
+                <div className="flex flex-wrap gap-4 text-sm mb-4">
+                  <div className="flex items-center">
+                    <CalendarDays className="h-4 w-4 mr-1 text-gray-500" />
+                    <span>Full school day</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Clock className="h-4 w-4 mr-1 text-gray-500" />
+                    <span>9am - 3pm</span>
+                  </div>
+                  <div className="flex items-center">
+                    <MapPin className="h-4 w-4 mr-1 text-gray-500" />
+                    <span>At your school</span>
+                  </div>
                 </div>
-                <h4 className="text-xl font-bold mb-2">{event.title}</h4>
-                <p className="mb-4">{event.description}</p>
-                <Button variant="outline" className="w-full">Book Now</Button>
+                <p className="text-gray-600 mb-4">
+                  An immersive day where children create their own fantasy world through art, drama, and storytelling. 
+                  Includes character development, world-building, and interactive performance.
+                </p>
               </div>
-            ))}
+              
+              <div className="bg-white rounded-xl shadow p-6 hover:shadow-lg transition-shadow">
+                <h4 className="text-xl font-bold text-rainbow-green mb-3">Eco-Art Spectacular</h4>
+                <div className="flex flex-wrap gap-4 text-sm mb-4">
+                  <div className="flex items-center">
+                    <CalendarDays className="h-4 w-4 mr-1 text-gray-500" />
+                    <span>Full school day</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Clock className="h-4 w-4 mr-1 text-gray-500" />
+                    <span>9am - 3pm</span>
+                  </div>
+                  <div className="flex items-center">
+                    <MapPin className="h-4 w-4 mr-1 text-gray-500" />
+                    <span>At your school</span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Creative exploration of environmental themes through recycled materials sculpture, nature-inspired music making, 
+                  and collaborative eco-themed murals.
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow p-6 hover:shadow-lg transition-shadow">
+                <h4 className="text-xl font-bold text-rainbow-purple mb-3">Cultural Carnival</h4>
+                <div className="flex flex-wrap gap-4 text-sm mb-4">
+                  <div className="flex items-center">
+                    <CalendarDays className="h-4 w-4 mr-1 text-gray-500" />
+                    <span>Full school day</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Clock className="h-4 w-4 mr-1 text-gray-500" />
+                    <span>9am - 3pm</span>
+                  </div>
+                  <div className="flex items-center">
+                    <MapPin className="h-4 w-4 mr-1 text-gray-500" />
+                    <span>At your school</span>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  A vibrant celebration of global cultures through music, dance, art, and food. 
+                  Children rotate through world-themed zones creating artwork, learning dance moves, and exploring instruments.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

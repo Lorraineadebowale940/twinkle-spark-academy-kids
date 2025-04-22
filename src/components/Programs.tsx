@@ -6,7 +6,8 @@ import {
   Drama, 
   Video, 
   BookOpen,
-  Footprints
+  Footprints,
+  Gamepad
 } from 'lucide-react';
 import { Link } from "react-router-dom";
 
@@ -58,6 +59,14 @@ const programData = [
     icon: BookOpen,
     className: 'program-card-nlp',
     path: '/services/nlp'
+  },
+  {
+    id: 'gaming',
+    title: 'Learning through Gaming',
+    description: 'Use gaming platforms to build creative skills, collaboration, and critical thinking.',
+    icon: Gamepad,
+    className: 'program-card-gaming',
+    path: '/services/gaming'
   }
 ];
 

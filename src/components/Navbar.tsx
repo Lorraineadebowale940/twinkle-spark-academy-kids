@@ -22,15 +22,26 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
-          <Link to="/#programs" className="font-medium hover:text-primary transition-colors">Programs</Link>
+          <div className="relative group">
+            <Link to="/#programs" className="font-medium hover:text-primary transition-colors">Programs</Link>
+            <div className="absolute left-0 top-full mt-2 w-48 bg-white shadow-md rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+              <div className="py-1">
+                <Link to="/services/art" className="block px-4 py-2 hover:bg-muted">Art</Link>
+                <Link to="/services/music" className="block px-4 py-2 hover:bg-muted">Music</Link>
+                <Link to="/services/drama" className="block px-4 py-2 hover:bg-muted">Drama</Link>
+                <Link to="/services/dance" className="block px-4 py-2 hover:bg-muted">Dance</Link>
+                <Link to="/services/film" className="block px-4 py-2 hover:bg-muted">Film</Link>
+                <Link to="/services/nlp" className="block px-4 py-2 hover:bg-muted">NLP for Kids</Link>
+                <Link to="/services/gaming" className="block px-4 py-2 hover:bg-muted">Learning through Gaming</Link>
+              </div>
+            </div>
+          </div>
           <Link to="/#after-school" className="font-medium hover:text-primary transition-colors">After School</Link>
           <Link to="/#big-bang" className="font-medium hover:text-primary transition-colors">Big Bang Days</Link>
           <Link to="/#special-needs" className="font-medium hover:text-primary transition-colors">Special Needs</Link>
           <Link to="/case-studies" className="font-medium hover:text-primary transition-colors">Case Studies</Link>
           <Link to="/blog" className="font-medium hover:text-primary transition-colors">Blog</Link>
-          <Button asChild className="bg-primary hover:bg-primary/80">
-            <Link to="/#contact">Contact Us</Link>
-          </Button>
+          <Link to="/about" className="font-medium hover:text-primary transition-colors">About Us</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -49,13 +60,18 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b shadow-lg animate-accordion-down">
           <div className="container py-4 flex flex-col gap-4">
-            <Link 
-              to="/#programs" 
-              className="py-2 px-4 hover:bg-muted rounded-md transition-colors"
-              onClick={toggleMenu}
-            >
-              Programs
-            </Link>
+            <div className="py-2 px-4">
+              <div className="font-medium mb-2">Programs</div>
+              <div className="pl-4 flex flex-col gap-2">
+                <Link to="/services/art" className="py-1 hover:text-primary" onClick={toggleMenu}>Art</Link>
+                <Link to="/services/music" className="py-1 hover:text-primary" onClick={toggleMenu}>Music</Link>
+                <Link to="/services/drama" className="py-1 hover:text-primary" onClick={toggleMenu}>Drama</Link>
+                <Link to="/services/dance" className="py-1 hover:text-primary" onClick={toggleMenu}>Dance</Link>
+                <Link to="/services/film" className="py-1 hover:text-primary" onClick={toggleMenu}>Film</Link>
+                <Link to="/services/nlp" className="py-1 hover:text-primary" onClick={toggleMenu}>NLP for Kids</Link>
+                <Link to="/services/gaming" className="py-1 hover:text-primary" onClick={toggleMenu}>Learning through Gaming</Link>
+              </div>
+            </div>
             <Link 
               to="/#after-school" 
               className="py-2 px-4 hover:bg-muted rounded-md transition-colors"
@@ -91,9 +107,13 @@ const Navbar = () => {
             >
               Blog
             </Link>
-            <Button asChild className="w-full bg-primary hover:bg-primary/80 mt-2">
-              <Link to="/#contact" onClick={toggleMenu}>Contact Us</Link>
-            </Button>
+            <Link 
+              to="/about" 
+              className="py-2 px-4 hover:bg-muted rounded-md transition-colors"
+              onClick={toggleMenu}
+            >
+              About Us
+            </Link>
           </div>
         </div>
       )}

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -15,35 +16,36 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Programs</h3>
             <ul className="space-y-2">
-              <li><a href="#art" className="opacity-80 hover:opacity-100 transition-opacity">Art</a></li>
-              <li><a href="#music" className="opacity-80 hover:opacity-100 transition-opacity">Music</a></li>
-              <li><a href="#drama" className="opacity-80 hover:opacity-100 transition-opacity">Drama</a></li>
-              <li><a href="#dance" className="opacity-80 hover:opacity-100 transition-opacity">Dance</a></li>
-              <li><a href="#film" className="opacity-80 hover:opacity-100 transition-opacity">Film</a></li>
-              <li><a href="#nlp" className="opacity-80 hover:opacity-100 transition-opacity">NLP for Kids</a></li>
+              <li><Link to="/services/art" className="opacity-80 hover:opacity-100 transition-opacity">Art</Link></li>
+              <li><Link to="/services/music" className="opacity-80 hover:opacity-100 transition-opacity">Music</Link></li>
+              <li><Link to="/services/drama" className="opacity-80 hover:opacity-100 transition-opacity">Drama</Link></li>
+              <li><Link to="/services/dance" className="opacity-80 hover:opacity-100 transition-opacity">Dance</Link></li>
+              <li><Link to="/services/film" className="opacity-80 hover:opacity-100 transition-opacity">Film</Link></li>
+              <li><Link to="/services/nlp" className="opacity-80 hover:opacity-100 transition-opacity">NLP for Kids</Link></li>
+              <li><Link to="/services/gaming" className="opacity-80 hover:opacity-100 transition-opacity">Learning through Gaming</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-bold text-lg mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><a href="#after-school" className="opacity-80 hover:opacity-100 transition-opacity">After School Clubs</a></li>
-              <li><a href="#big-bang" className="opacity-80 hover:opacity-100 transition-opacity">Big Bang Days</a></li>
-              <li><a href="#special-needs" className="opacity-80 hover:opacity-100 transition-opacity">Special Needs Support</a></li>
-              <li><a href="#" className="opacity-80 hover:opacity-100 transition-opacity">Holiday Camps</a></li>
-              <li><a href="#" className="opacity-80 hover:opacity-100 transition-opacity">School Partnerships</a></li>
+              <li><Link to="/#after-school" className="opacity-80 hover:opacity-100 transition-opacity">After School Clubs</Link></li>
+              <li><Link to="/#big-bang" className="opacity-80 hover:opacity-100 transition-opacity">Big Bang Days</Link></li>
+              <li><Link to="/#special-needs" className="opacity-80 hover:opacity-100 transition-opacity">Special Needs Support</Link></li>
+              <li><Link to="/case-studies" className="opacity-80 hover:opacity-100 transition-opacity">Case Studies</Link></li>
+              <li><Link to="/blog" className="opacity-80 hover:opacity-100 transition-opacity">Blog</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-bold text-lg mb-4">Information</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="opacity-80 hover:opacity-100 transition-opacity">About Us</a></li>
-              <li><a href="#" className="opacity-80 hover:opacity-100 transition-opacity">Our Team</a></li>
-              <li><a href="#" className="opacity-80 hover:opacity-100 transition-opacity">Testimonials</a></li>
-              <li><a href="#" className="opacity-80 hover:opacity-100 transition-opacity">FAQ</a></li>
-              <li><a href="#" className="opacity-80 hover:opacity-100 transition-opacity">Privacy Policy</a></li>
-              <li><a href="#" className="opacity-80 hover:opacity-100 transition-opacity">Terms & Conditions</a></li>
+              <li><Link to="/about" className="opacity-80 hover:opacity-100 transition-opacity">About Us</Link></li>
+              <li><Link to="/team" className="opacity-80 hover:opacity-100 transition-opacity">Our Team</Link></li>
+              <li><Link to="/testimonials" className="opacity-80 hover:opacity-100 transition-opacity">Testimonials</Link></li>
+              <li><Link to="/faq" className="opacity-80 hover:opacity-100 transition-opacity">FAQ</Link></li>
+              <li><Link to="/privacy-policy" className="opacity-80 hover:opacity-100 transition-opacity">Privacy Policy</Link></li>
+              <li><Link to="/terms-conditions" className="opacity-80 hover:opacity-100 transition-opacity">Terms & Conditions</Link></li>
             </ul>
           </div>
         </div>
