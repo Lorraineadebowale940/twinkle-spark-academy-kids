@@ -1,19 +1,20 @@
-
-import React, { useState } from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import BlogPost from '../components/BlogPost';
-import { Calendar, User, ArrowRight, Tag, Clock } from 'lucide-react';
+import React, { useState } from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import BlogPost from "../components/BlogPost";
+import { Calendar, User, ArrowRight, Tag, Clock } from "lucide-react";
 
 const Blog = () => {
   const [selectedPost, setSelectedPost] = useState(null);
-  
+
   const blogPosts = [
     {
       id: "the-power-of-creative-education",
       title: "The Power of Creative Education in Child Development",
-      excerpt: "Exploring how arts education develops critical thinking, emotional intelligence, and confidence in children of all abilities.",
-      image: "https://res.cloudinary.com/dydlkejl0/image/upload/v1741905419/pexels-borishamer-29545228_tthnex.jpg",
+      excerpt:
+        "Exploring how arts education develops critical thinking, emotional intelligence, and confidence in children of all abilities.",
+      image:
+        "https://res.cloudinary.com/dydlkejl0/image/upload/v1741905419/pexels-borishamer-29545228_tthnex.jpg",
       date: "April 15, 2025",
       author: "Lorraine Adebowale",
       tags: ["Child Development", "Creative Education", "Research"],
@@ -74,13 +75,16 @@ const Blog = () => {
         <p>Creative education isn't a luxury or an add-on—it's fundamental to developing well-rounded individuals with the cognitive flexibility, emotional intelligence, and innovative thinking needed for success in both personal and professional realms.</p>
 
         <p>As we advocate for educational approaches that truly serve children's development, creative arts must be recognized as core curriculum, equally valued alongside literacy and numeracy. The evidence is clear: creativity doesn't just enhance learning—it is learning, in its most comprehensive and meaningful form.</p>
-      `
+      `,
     },
     {
       id: "inclusive-arts-education",
-      title: "Creating Truly Inclusive Arts Spaces for Children with Special Needs",
-      excerpt: "Practical strategies for making creative programs accessible and meaningful for neurodivergent children and those with disabilities.",
-      image: "https://res.cloudinary.com/dydlkejl0/image/upload/v1741905079/pexels-shkrabaanthony-6288088_qbrzhu.jpg",
+      title:
+        "Creating Truly Inclusive Arts Spaces for Children with Special Needs",
+      excerpt:
+        "Practical strategies for making creative programs accessible and meaningful for neurodivergent children and those with disabilities.",
+      image:
+        "https://res.cloudinary.com/dydlkejl0/image/upload/v1741905079/pexels-shkrabaanthony-6288088_qbrzhu.jpg",
       date: "March 28, 2025",
       author: "Maya Sharma",
       tags: ["Inclusion", "Special Needs", "Accessibility"],
@@ -182,13 +186,16 @@ const Blog = () => {
         </ul>
 
         <p>Inclusive creative spaces mirror the diversity of our communities and prepare children to navigate a complex world with compassion and understanding. By designing programs that embrace human variation from the start, we create environments where all children can discover their creative voice and express it to the world.</p>
-      `
+      `,
     },
     {
       id: "child-led-learning",
-      title: "The Magic of Child-Led Creative Learning: When to Guide and When to Step Back",
-      excerpt: "Finding the balance between structure and freedom in children's creative development through thoughtful facilitation.",
-      image: "https://res.cloudinary.com/dydlkejl0/image/upload/v1741904845/pexels-cliff-booth-4058218_u6x2m7.jpg",
+      title:
+        "The Magic of Child-Led Creative Learning: When to Guide and When to Step Back",
+      excerpt:
+        "Finding the balance between structure and freedom in children's creative development through thoughtful facilitation.",
+      image:
+        "https://res.cloudinary.com/dydlkejl0/image/upload/v1741904845/pexels-cliff-booth-4058218_u6x2m7.jpg",
       date: "February 12, 2025",
       author: "James Wilson",
       tags: ["Teaching Methods", "Child-led Learning", "Creative Development"],
@@ -285,13 +292,16 @@ const Blog = () => {
         <p>Perhaps the most important element in balancing structure and freedom is trust—trust in children's innate creativity and in the organic unfolding of the creative process. When we truly trust children as creative beings, we become more comfortable with the messiness, false starts, unexpected directions, and surprising outcomes that characterize authentic creative learning.</p>
 
         <p>By creating conditions where children can safely explore their own ideas while benefiting from thoughtful guidance, we nurture not just artistic skills but the creative thinking that will serve them throughout their lives. The magic happens not when we control the creative journey, but when we create the conditions for children to discover their own path—and then have the privilege of walking alongside them as they explore.</p>
-      `
+      `,
     },
     {
       id: "digital-creativity",
-      title: "Digital Creativity: Balancing Screen Time with Meaningful Creative Engagement",
-      excerpt: "How digital tools can enhance rather than replace traditional creative experiences for today's children.",
-      image: "https://res.cloudinary.com/dydlkejl0/image/upload/v1741882559/child_playing_with_dinosaur_gv7xpm.jpg",
+      title:
+        "Digital Creativity: Balancing Screen Time with Meaningful Creative Engagement",
+      excerpt:
+        "How digital tools can enhance rather than replace traditional creative experiences for today's children.",
+      image:
+        "https://res.cloudinary.com/dydlkejl0/image/upload/v1741882559/child_playing_with_dinosaur_gv7xpm.jpg",
       date: "January 20, 2025",
       author: "Alex Chen",
       tags: ["Digital Learning", "Technology", "Creative Tools"],
@@ -375,15 +385,15 @@ const Blog = () => {
         <p>When thoughtfully integrated, technology can amplify children's creative capabilities without diminishing their connection to physical materials, sensory experiences, and face-to-face collaboration. The goal is to develop young people who move fluidly between digital and non-digital creative modes, choosing the right tools for their expressive purposes.</p>
 
         <p>By fostering this balanced approach, we help children develop both the traditional creative foundations that humans have used for millennia and the digital literacy needed for creative expression in the contemporary world. The sweet spot isn't about finding a perfect amount of "screen time"—it's about ensuring that time with technology builds rather than limits creative capacity.</p>
-      `
-    }
+      `,
+    },
   ];
-  
+
   const handlePostSelect = (post) => {
     setSelectedPost(post);
     window.scrollTo(0, 0);
   };
-  
+
   const handleBack = () => {
     setSelectedPost(null);
     window.scrollTo(0, 0);
@@ -399,43 +409,46 @@ const Blog = () => {
               <BlogPost post={selectedPost} onBack={handleBack} />
             ) : (
               <>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Our Blog</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
+                  Our Blog
+                </h1>
                 <p className="text-lg text-center max-w-3xl mx-auto mb-12">
-                  Insights, ideas, and inspiration from the world of creative education for children.
+                  Insights, ideas, and inspiration from the world of creative
+                  education for children.
                 </p>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {blogPosts.map((post) => (
-                    <div 
-                      key={post.id} 
+                    <div
+                      key={post.id}
                       className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
                     >
                       <div className="h-56 md:h-64 overflow-hidden">
-                        <img 
-                          className="w-full h-full object-cover transition-transform hover:scale-105 duration-500" 
-                          src={post.image} 
+                        <img
+                          className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                          src={post.image}
                           alt={post.title}
                         />
                       </div>
-                      
+
                       <div className="p-6">
                         <div className="flex flex-wrap gap-2 mb-3">
                           {post.tags.map((tag, i) => (
-                            <span 
-                              key={i} 
+                            <span
+                              key={i}
                               className="text-xs bg-rainbow-purple/10 text-rainbow-purple px-2 py-1 rounded-full"
                             >
                               {tag}
                             </span>
                           ))}
                         </div>
-                        
+
                         <h2 className="text-xl font-bold mb-3 hover:text-rainbow-purple transition-colors">
                           {post.title}
                         </h2>
-                        
+
                         <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                        
+
                         <div className="flex justify-between items-center text-sm text-gray-500 mb-4">
                           <div className="flex items-center gap-1">
                             <Calendar size={14} className="opacity-70" />
@@ -446,15 +459,17 @@ const Blog = () => {
                             <span>5 min read</span>
                           </div>
                         </div>
-                        
+
                         <div className="flex items-center gap-2 mb-4">
                           <div className="bg-rainbow-blue/20 p-2 rounded-full">
                             <User size={14} className="text-rainbow-blue" />
                           </div>
-                          <span className="text-sm font-medium">{post.author}</span>
+                          <span className="text-sm font-medium">
+                            {post.author}
+                          </span>
                         </div>
-                        
-                        <button 
+
+                        <button
                           onClick={() => handlePostSelect(post)}
                           className="flex items-center font-bold text-rainbow-purple hover:text-rainbow-blue transition-colors"
                         >
