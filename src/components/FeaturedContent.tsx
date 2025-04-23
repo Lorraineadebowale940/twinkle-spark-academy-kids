@@ -8,7 +8,7 @@ const FeaturedContent = () => {
   const featuredCase = {
     title: "Inclusive Drama Project at Meadow Primary School",
     summary: "A 12-week drama program that dramatically improved confidence and communication skills for 28 students with diverse needs.",
-    image: "https://res.cloudinary.com/dydlkejl0/image/upload/v1737651234/Lorraine_t6eo0p.jpg",
+    image: "https://images.unsplash.com/photo-1560421683-6856ea585c78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
   };
 
   const featuredPosts = [
