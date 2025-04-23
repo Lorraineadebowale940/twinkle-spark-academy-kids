@@ -65,8 +65,8 @@ const BlogPost = ({ post, onBack }: BlogPostProps) => {
           </div>
         </div>
         
-        <div 
-          className="prose prose-lg max-w-none prose-headings:text-rainbow-purple prose-h2:text-2xl prose-h2:font-bold prose-h3:text-xl prose-h3:font-bold prose-p:text-gray-700 prose-a:text-rainbow-blue prose-strong:text-gray-800 prose-ul:text-gray-700 prose-li:my-0.5"
+        <article 
+          className="prose prose-lg max-w-none prose-headings:text-rainbow-purple prose-h2:text-2xl prose-h2:font-bold prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-xl prose-h3:font-bold prose-h3:mt-6 prose-h3:mb-3 prose-p:text-gray-700 prose-p:my-4 prose-a:text-rainbow-blue prose-a:font-medium prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-800 prose-ul:text-gray-700 prose-ul:my-4 prose-li:my-1 prose-li:pl-1"
           dangerouslySetInnerHTML={{ __html: post.content }} 
         />
         

@@ -38,8 +38,8 @@ const About = () => {
               <div className="relative">
                 <div className="aspect-video rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="https://res.cloudinary.com/dydlkejl0/image/upload/v1741904845/pexels-cliff-booth-4058218_u6x2m7.jpg" 
-                    alt="Children engaged in creative activities" 
+                    src="https://res.cloudinary.com/dydlkejl0/image/upload/v1737651237/Lorraine_speaking_in_sepia_yv9700.jpg" 
+                    alt="Lorraine Adebowale speaking" 
                     className="w-full h-full object-cover"
                   />
                 </div>
