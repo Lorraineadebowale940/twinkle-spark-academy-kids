@@ -21,7 +21,7 @@ const Index = () => {
           name="Lorraine Adebowale"
           role="Founder & Creative Director"
           image="https://res.cloudinary.com/dydlkejl0/image/upload/v1737651234/Lorraine_t6eo0p.jpg"
-          bio="With over 15 years of experience in inclusive learning environments, Lorraine has taught and directed performances worldwide at prestigious venues including The Royal Albert Hall, the O2 Arena, London Palladium, and Disney. Her passion for accessible arts education has transformed countless lives.
+          bio={`With over 15 years of experience in inclusive learning environments, Lorraine has taught and directed performances worldwide at prestigious venues including The Royal Albert Hall, the O2 Arena, London Palladium, and Disney. Her passion for accessible arts education has transformed countless lives.
 
 Lorraine trained with Bigfoot Arts, Chickenshed, and the Candoco company to ensure learning is accessible and empowering for every individual, regardless of their needs, abilities, or disabilities.
 
@@ -31,7 +31,7 @@ Key Achievements:
 - Directed inclusive performances at The Royal Albert Hall
 - Led workshops for educators in 15+ countries
 - Developed pioneering sensory-inclusive curriculum
-- Mentored over 300 young leaders from diverse backgrounds"
+- Mentored over 300 young leaders from diverse backgrounds`}
         />
         <div id="programs">
           <Programs />
