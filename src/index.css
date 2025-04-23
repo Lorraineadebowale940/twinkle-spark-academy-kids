@@ -7,6 +7,9 @@
 
 @layer base {
   :root {
+    --font-sans: 'Nunito', sans-serif;
+    --font-display: 'Baloo 2', sans-serif;
+    
     --background: 280 60% 98%;
     --foreground: 280 10% 20%;
 

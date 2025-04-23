@@ -73,6 +73,7 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
         display: ["var(--font-display)", ...fontFamily.sans],
+        rounded: ["Nunito", ...fontFamily.sans], // Added the missing font-rounded definition
       },
       keyframes: {
         "accordion-down": {
