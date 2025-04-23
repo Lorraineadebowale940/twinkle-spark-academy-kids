@@ -8,7 +8,7 @@ const FeaturedContent = () => {
   const featuredCase = {
     title: "Inclusive Drama Project at Meadow Primary School",
     summary: "A 12-week drama program that dramatically improved confidence and communication skills for 28 students with diverse needs.",
-    image: "https://images.unsplash.com/photo-1529390079861-591de354faf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image: "https://res.cloudinary.com/dydlkejl0/image/upload/v1737651234/Lorraine_t6eo0p.jpg",
   };
 
   const featuredPosts = [
@@ -37,7 +37,7 @@ const FeaturedContent = () => {
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-          {/* Featured Case Study */}
+          {/* Featured Case Study with Lorraine's photo */}
           <div className="lg:col-span-2 bg-white rounded-xl shadow-md overflow-hidden">
             <div className="md:flex h-full">
               <div className="md:w-1/2">

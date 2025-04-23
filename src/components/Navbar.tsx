@@ -36,9 +36,9 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <Link to="/#after-school" className="font-medium hover:text-primary transition-colors">After School</Link>
-          <Link to="/#big-bang" className="font-medium hover:text-primary transition-colors">Big Bang Days</Link>
-          <Link to="/#special-needs" className="font-medium hover:text-primary transition-colors">Special Needs</Link>
+          <a href="/#after-school" className="font-medium hover:text-primary transition-colors">After School</a>
+          <a href="/#big-bang" className="font-medium hover:text-primary transition-colors">Big Bang Days</a>
+          <a href="/#special-needs" className="font-medium hover:text-primary transition-colors">Special Needs</a>
           <Link to="/case-studies" className="font-medium hover:text-primary transition-colors">Case Studies</Link>
           <Link to="/blog" className="font-medium hover:text-primary transition-colors">Blog</Link>
           <Link to="/about" className="font-medium hover:text-primary transition-colors">About Us</Link>
@@ -72,27 +72,27 @@ const Navbar = () => {
                 <Link to="/services/gaming" className="py-1 hover:text-primary" onClick={toggleMenu}>Learning through Gaming</Link>
               </div>
             </div>
-            <Link 
-              to="/#after-school" 
+            <a 
+              href="/#after-school" 
               className="py-2 px-4 hover:bg-muted rounded-md transition-colors"
               onClick={toggleMenu}
             >
               After School
-            </Link>
-            <Link 
-              to="/#big-bang" 
+            </a>
+            <a 
+              href="/#big-bang" 
               className="py-2 px-4 hover:bg-muted rounded-md transition-colors"
               onClick={toggleMenu}
             >
               Big Bang Days
-            </Link>
-            <Link 
-              to="/#special-needs" 
+            </a>
+            <a 
+              href="/#special-needs" 
               className="py-2 px-4 hover:bg-muted rounded-md transition-colors"
               onClick={toggleMenu}
             >
               Special Needs
-            </Link>
+            </a>
             <Link 
               to="/case-studies" 
               className="py-2 px-4 hover:bg-muted rounded-md transition-colors"
