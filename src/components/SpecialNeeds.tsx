@@ -1,96 +1,54 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Heart, Users, BookOpen, Sparkles, Star, Lightbulb, CheckCircle } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
 const SpecialNeeds = () => {
-  const specialNeedsInfo = [
-    {
-      name: "Autism Spectrum",
-      description: "Creative arts provide autistic children with sensory-appropriate ways to express themselves, develop social skills, and build confidence. Our structured yet flexible approach accommodates different sensory needs while celebrating neurodiversity.",
-      benefits: [
-        "Visual schedules and consistent routines provide security",
-        "Sensory-friendly spaces with adjustable lighting and sound",
-        "Creative expression without social pressure",
-        "Development of communication skills through art, music and drama"
-      ]
-    },
-    {
-      name: "PDA (Pathological Demand Avoidance)",
-      description: "Our child-led approach is perfect for children with PDA profiles. By framing activities as invitations rather than demands, and offering meaningful choices, we create a low-pressure environment where creativity can flourish.",
-      benefits: [
-        "Child-directed activities reduce demand anxiety",
-        "Flexible session structure with multiple pathways to engagement",
-        "Indirect learning through play and creativity",
-        "Focus on intrinsic motivation and collaborative approaches"
-      ]
-    },
-    {
-      name: "ADHD",
-      description: "Our movement-friendly, hands-on creative activities are ideal for children with ADHD. We provide the structure, positive reinforcement, and multisensory experiences that help channel energy into creative expression.",
-      benefits: [
-        "Physically engaging activities harness natural energy",
-        "Clear, achievable goals with immediate creative rewards",
-        "Regular movement breaks and transitions between activities",
-        "Multiple ways to participate based on attention span"
-      ]
-    },
-    {
-      name: "Dyslexia & Dyscalculia",
-      description: "Arts education offers alternative pathways to learning that often bypass text-based challenges. Our multisensory approach helps strengthen areas that support literacy and numeracy through creative means.",
-      benefits: [
-        "Visual and tactile learning reinforces concepts",
-        "Drama and music improves sequencing and pattern recognition",
-        "Confidence building counters academic frustration",
-        "Strengths-based approach celebrates diverse learning styles"
-      ]
-    },
-    {
-      name: "Physical Disabilities",
-      description: "We believe in arts access for all bodies. Our adaptable approach ensures every child can fully participate in creative activities regardless of mobility or physical limitations.",
-      benefits: [
-        "Adapted tools and equipment for different physical abilities",
-        "Flexible participation options for all activities",
-        "Space designed for wheelchair and mobility aid access",
-        "Staff trained in inclusive physical facilitation"
-      ]
-    }
-  ];
-
-  const gamingForLearning = [
-    {
-      name: "Minecraft",
-      benefits: "Spatial awareness, planning, collaboration, creativity",
-      appeal: "Open-ended building, predictable rules, visual learning"
-    },
-    {
-      name: "Animal Crossing",
-      benefits: "Social skills, routine management, organization",
-      appeal: "Low pressure, predictable positive interactions, collecting"
-    },
-    {
-      name: "Pokémon Games",
-      benefits: "Pattern recognition, categorization, strategy, memory",
-      appeal: "Collecting, clear rules, special interests support"
-    },
-    {
-      name: "Mario Kart",
-      benefits: "Turn-taking, handling competition, spatial awareness",
-      appeal: "Short play sessions, clear visual feedback, structured fun"
-    },
-    {
-      name: "Roblox Creative Modes",
-      benefits: "Digital literacy, creative design, self-expression",
-      appeal: "Customizable environments, special interest exploration"
-    },
-    {
-      name: "Sensory Apps",
-      benefits: "Self-regulation, cause and effect understanding",
-      appeal: "Visual stimulation, predictable responses, calming effects"
-    }
-  ];
-
+  const specialNeedsInfo = [{
+    name: "Autism Spectrum",
+    description: "Creative arts provide autistic children with sensory-appropriate ways to express themselves, develop social skills, and build confidence. Our structured yet flexible approach accommodates different sensory needs while celebrating neurodiversity.",
+    benefits: ["Visual schedules and consistent routines provide security", "Sensory-friendly spaces with adjustable lighting and sound", "Creative expression without social pressure", "Development of communication skills through art, music and drama"]
+  }, {
+    name: "PDA (Pathological Demand Avoidance)",
+    description: "Our child-led approach is perfect for children with PDA profiles. By framing activities as invitations rather than demands, and offering meaningful choices, we create a low-pressure environment where creativity can flourish.",
+    benefits: ["Child-directed activities reduce demand anxiety", "Flexible session structure with multiple pathways to engagement", "Indirect learning through play and creativity", "Focus on intrinsic motivation and collaborative approaches"]
+  }, {
+    name: "ADHD",
+    description: "Our movement-friendly, hands-on creative activities are ideal for children with ADHD. We provide the structure, positive reinforcement, and multisensory experiences that help channel energy into creative expression.",
+    benefits: ["Physically engaging activities harness natural energy", "Clear, achievable goals with immediate creative rewards", "Regular movement breaks and transitions between activities", "Multiple ways to participate based on attention span"]
+  }, {
+    name: "Dyslexia & Dyscalculia",
+    description: "Arts education offers alternative pathways to learning that often bypass text-based challenges. Our multisensory approach helps strengthen areas that support literacy and numeracy through creative means.",
+    benefits: ["Visual and tactile learning reinforces concepts", "Drama and music improves sequencing and pattern recognition", "Confidence building counters academic frustration", "Strengths-based approach celebrates diverse learning styles"]
+  }, {
+    name: "Physical Disabilities",
+    description: "We believe in arts access for all bodies. Our adaptable approach ensures every child can fully participate in creative activities regardless of mobility or physical limitations.",
+    benefits: ["Adapted tools and equipment for different physical abilities", "Flexible participation options for all activities", "Space designed for wheelchair and mobility aid access", "Staff trained in inclusive physical facilitation"]
+  }];
+  const gamingForLearning = [{
+    name: "Minecraft",
+    benefits: "Spatial awareness, planning, collaboration, creativity",
+    appeal: "Open-ended building, predictable rules, visual learning"
+  }, {
+    name: "Animal Crossing",
+    benefits: "Social skills, routine management, organization",
+    appeal: "Low pressure, predictable positive interactions, collecting"
+  }, {
+    name: "Pokémon Games",
+    benefits: "Pattern recognition, categorization, strategy, memory",
+    appeal: "Collecting, clear rules, special interests support"
+  }, {
+    name: "Mario Kart",
+    benefits: "Turn-taking, handling competition, spatial awareness",
+    appeal: "Short play sessions, clear visual feedback, structured fun"
+  }, {
+    name: "Roblox Creative Modes",
+    benefits: "Digital literacy, creative design, self-expression",
+    appeal: "Customizable environments, special interest exploration"
+  }, {
+    name: "Sensory Apps",
+    benefits: "Self-regulation, cause and effect understanding",
+    appeal: "Visual stimulation, predictable responses, calming effects"
+  }];
   const lorraineProfile = {
     name: "Lorraine Adebowale",
     role: "Founder & Artistic Director",
@@ -98,53 +56,13 @@ const SpecialNeeds = () => {
     description: "With over 15 years of experience in inclusive learning environments, Lorraine has taught and directed performances worldwide at prestigious venues including The Royal Albert Hall, the O2 Arena, London Palladium, and Disney. Her passion for accessible arts education has transformed countless lives.",
     training: "Lorraine trained with Bigfoot Arts, Chickenshed, and the Candoco company to ensure learning is accessible and empowering for every individual, regardless of their needs, abilities, or disabilities.",
     philosophy: "I believe that creative expression is not a luxury but a necessity for every child's development. When we remove barriers to arts participation, we unlock limitless potential in young people who may struggle in traditional learning environments.",
-    achievements: [
-      "Directed inclusive performances at The Royal Albert Hall",
-      "Led workshops for educators in 15+ countries",
-      "Developed pioneering sensory-inclusive curriculum",
-      "Mentored over 300 young leaders from diverse backgrounds"
-    ]
+    achievements: ["Directed inclusive performances at The Royal Albert Hall", "Led workshops for educators in 15+ countries", "Developed pioneering sensory-inclusive curriculum", "Mentored over 300 young leaders from diverse backgrounds"]
   };
-
-  return (
-    <section id="special-needs" className="py-20">
+  return <section id="special-needs" className="py-20">
       <div className="container px-4">
         <div className="flex flex-col gap-12">
           {/* Profile Section */}
-          <div className="bg-gradient-to-r from-rainbow-purple/20 to-rainbow-blue/20 p-8 rounded-2xl">
-            <div className="flex flex-col lg:flex-row gap-8 items-center">
-              <div className="lg:w-1/3 text-center">
-                <div className="relative inline-block">
-                  <div className="absolute inset-0 bg-gradient-to-br from-rainbow-purple to-rainbow-blue rounded-full blur-md"></div>
-                  <img 
-                    src={lorraineProfile.image} 
-                    alt={lorraineProfile.name} 
-                    className="relative rounded-full w-48 h-48 object-cover border-4 border-white"
-                  />
-                </div>
-                <h3 className="text-2xl font-bold mt-4">{lorraineProfile.name}</h3>
-                <p className="text-primary font-medium">{lorraineProfile.role}</p>
-              </div>
-              
-              <div className="lg:w-2/3">
-                <p className="text-lg mb-4">{lorraineProfile.description}</p>
-                <p className="mb-4">{lorraineProfile.training}</p>
-                <blockquote className="border-l-4 border-primary pl-4 italic mb-4">
-                  "{lorraineProfile.philosophy}"
-                </blockquote>
-                
-                <h4 className="font-bold mb-2">Key Achievements:</h4>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                  {lorraineProfile.achievements.map((achievement, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <Star className="h-5 w-5 text-yellow-500 flex-shrink-0 mt-0.5" />
-                      <span>{achievement}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
+          
 
           {/* Special Needs Services */}
           <div>
@@ -192,21 +110,17 @@ const SpecialNeeds = () => {
               
               <TabsContent value="needs" className="mt-0">
                 <div className="space-y-6">
-                  {specialNeedsInfo.map((need, index) => (
-                    <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
+                  {specialNeedsInfo.map((need, index) => <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
                       <h3 className="text-xl font-bold mb-2 text-primary">{need.name}</h3>
                       <p className="mb-4">{need.description}</p>
                       <h4 className="font-bold mb-2">How We Help:</h4>
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                        {need.benefits.map((benefit, i) => (
-                          <li key={i} className="flex items-start gap-2">
+                        {need.benefits.map((benefit, i) => <li key={i} className="flex items-start gap-2">
                             <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
                             <span>{benefit}</span>
-                          </li>
-                        ))}
+                          </li>)}
                       </ul>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </TabsContent>
               
@@ -218,13 +132,11 @@ const SpecialNeeds = () => {
                   </p>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {gamingForLearning.map((game, index) => (
-                      <div key={index} className="bg-muted p-4 rounded-lg">
+                    {gamingForLearning.map((game, index) => <div key={index} className="bg-muted p-4 rounded-lg">
                         <h4 className="font-bold text-primary mb-1">{game.name}</h4>
                         <p className="text-sm mb-2"><span className="font-medium">Learning benefits:</span> {game.benefits}</p>
                         <p className="text-sm"><span className="font-medium">Appeal:</span> {game.appeal}</p>
-                      </div>
-                    ))}
+                      </div>)}
                   </div>
                   
                   <div className="mt-6 p-4 bg-muted rounded-lg">
@@ -246,8 +158,6 @@ const SpecialNeeds = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default SpecialNeeds;
